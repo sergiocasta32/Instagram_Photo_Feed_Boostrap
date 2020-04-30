@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<title>Hello, world!</title>
+</head>
+
+<body>
+	<!-- Navbar-->
+	<nav class="navbar navbar-light navbar bg-light justify-content-between ">
+		<div class="container d-flex">
+			<div class="mr-auto p-2">
+				<a class="navbar-brand" href="#">
+					<img class="d-inline-block align-top" src="https://sguru.org/wp-content/uploads/2018/01/logo-instagram.png" width="150" />
+        </a>
+			</div>
+			<div class="navbar-nav p-2">
+				<!-- Button trigger modal -->
+				<button class="btn btn-success" data-toggle="modal" data-target="#newPostModal">Create a new post</button>
+				<!-- Modal para crear nuevo posst-->
+				<div class="modal fade" id="newPostModal" tabindex="-1" role="dialog"
+					aria-labelledby="newPostModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+
+							<div class="modal-body">
+								<textarea class="form-control" aria-label="With textarea"></textarea>
+								<button class="btn btn-outline-dark mt-3" data-dismiss="modal">
+                    <img src="https://img.icons8.com/plasticine/100/000000/camera.png" width="25" />
+                  </button>
+								<button class="btn btn-outline-dark mt-3">
+                      <img src="https://img.icons8.com/nolan/64/map-marker.png" width="25"/>
+                    </button>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cancel</button>
+								<button type="button" class="btn btn-success">Publish</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav-item dropdown p-2">
+				<button class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="https://img.icons8.com/color/48/000000/settings.png" width="25px" />
+          </button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- End Navbar-->
+	<!-- Buttons Views-->
+	<div class="nav nav-tabs d-flex justify-content-center pb-3" id="myTab" role="tabList">
+		<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+			aria-controls="nav-home" aria-selected="true">
+			<button class="btn btn-outline-dark border-0 mt-3" aria-pressed="true">
+        <img src="https://img.icons8.com/clouds/100/000000/grid.png" width="50"/>
+        </button>
+		</a>
+		<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+			aria-selected="false">
+			<button class="btn btn-outline-dark border-0 mt-3" aria-pressed="true">
+        <img src="https://img.icons8.com/clouds/100/000000/rounded-square.png" width="50"/>
+        </button>
+		</a>
+	</div>
+	<!-- GridView-->
+	<div class="tab-content" id="nav-tabContent">
+		<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+			<div class="container">
+				<div class="row">
+					<div class="col col-sm-12 col-lg-4 pb-2">
+						<img src="http://lorempixel.com/375/200"></img>
+					</div>
+					<div class="col col-sm-12 col-lg-4 pb-2">
+						<img src="http://lorempixel.com/375/200"></img>
+					</div>
+					<div class="col col sm-12 col-lg-4 pb-2">
+						<img src="http://lorempixel.com/375/200"></img>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col sm-12 col-lg-4 pb-2">
+						<img src="http://lorempixel.com/375/200"></img>
+					</div>
+					<div class="col col-sm-12 col-lg-4 pb-2">
+						<img src="http://lorempixel.com/375/200"></img>
+					</div>
+					<div class="col col sm-12 col-lg-4 pb-2">
+						<img src="https://media.giphy.com/media/cIEHWaWG0EWdLYDjuC/giphy.gif" width="375" height="200"></img>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-sm-12 col-lg-4 pb-2">
+						<img src="http://lorempixel.com/375/200"></img>
+					</div>
+					<div class="col col-sm-12 col-lg-4 pb-2">
+						<img src="http://lorempixel.com/375/200"></img>
+					</div>
+					<div class="col col-sm-12 col-lg-4 pb-2">
+						<img src="http://lorempixel.com/375/200"></img>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CardView Star-->
+		<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+			<div class="contanier d-flex justify-content-center col col-12 pb-3">
+				<div class="card border-light mb-3">
+					<div class="card-header">
+						<div class="row">
+							<div class="col col-6 d-flex justify-content-star">
+								Titulo de la foto
+							</div>
+							<div class="col col-6 d-flex justify-content-end">
+								<p class="text-secondary">12/14</p>
+							</div>
+						</div>
+					</div>
+					<div class="card-body">
+						<img src="https://media.giphy.com/media/l1J9HZ1tyyIbPxFHG/giphy.gif" width="600" height="400"></img>
+					</div>
+					<div class="card-footer bg-transparent border-light">
+						<div class="row">
+							<div class="col col-12 d-flex justify-content-star">
+								15k Likes
+							</div>
+						</div>
+						<div class="row">
+							<div class="col col-12 d-flex justify-content-star">
+								<p>
+									"Hola, me llamo Iñigo Montoya. Tu mataste a mi
+									padre…<br>¡prepárate a morir!"<strong>#IñigoMontoya#ThePrincessBride</strong></br>
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col col-1 d-flex justify-content-star">
+								<img src="https://img.icons8.com/carbon-copy/100/000000/filled-like.png" width="25" />
+                  </div>
+								<div class="col col-11 d-flex justify-content-star text-secondary">
+									Comments...
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="contanier d-flex justify-content-center col col-12 pb-3">
+					<div class="card border-light mb-3">
+						<div class="card-header">
+							<div class="row">
+								<div class="col col-6 d-flex justify-content-star">
+									Titulo de la foto
+								</div>
+								<div class="col col-6 d-flex justify-content-end">
+									<p class="text-secondary">12/14</p>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<img src="https://www.bolsamania.com/cine/wp-content/uploads/2019/11/86-600x400.jpg"></img>
+						</div>
+						<div class="card-footer bg-transparent border-light">
+							<div class="row">
+								<div class="col col-12 d-flex justify-content-star">
+									15k Likes
+								</div>
+							</div>
+							<div class="row">
+								<div class="col col-12 d-flex justify-content-star">
+									<p>
+										"Hola, me llamo Iñigo Montoya. Tu mataste a mi
+										padre…<br>¡prepárate a morir!"<strong>#IñigoMontoya#ThePrincessBride</strong></br>
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col col-1 d-flex justify-content-star">
+									<img src="https://img.icons8.com/carbon-copy/100/000000/filled-like.png" width="25" />
+                  </div>
+									<div class="col col-11 d-flex justify-content-star text-secondary">
+										Comments...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="contanier d-flex justify-content-center col col-12 pb-3">
+						<div class="card border-light mb-3">
+							<div class="card-header">
+								<div class="row">
+									<div class="col col-6 d-flex justify-content-star">
+										Titulo de la foto
+									</div>
+									<div class="col col-6 d-flex justify-content-end">
+										<p class="text-secondary">12/14</p>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<img src="https://www.bolsamania.com/cine/wp-content/uploads/2019/11/86-600x400.jpg"></img>
+							</div>
+							<div class="card-footer bg-transparent border-light">
+								<div class="row">
+									<div class="col col-12 d-flex justify-content-star">
+										15k Likes
+									</div>
+								</div>
+								<div class="row">
+									<div class="col col-12 d-flex justify-content-star">
+										<p>
+											"Hola, me llamo Iñigo Montoya. Tu mataste a mi
+											padre…<br>¡prepárate a morir!"<strong>#IñigoMontoya#ThePrincessBride</strong></br>
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col col-1 d-flex justify-content-star">
+										<img src="https://img.icons8.com/carbon-copy/100/000000/filled-like.png" width="25" />
+                  </div>
+										<div class="col col-11 d-flex justify-content-star text-secondary">
+											Comments...
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- CardView END-->
+
+				</div>
+			</div>
+
+			<!-- Optional JavaScript -->
+			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+				integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+				crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+				integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+				crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+				integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+				crossorigin="anonymous"></script>
+</body>
+</html>
